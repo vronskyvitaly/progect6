@@ -1,9 +1,6 @@
 // ПЕРЕД РАБОТОЙ С ЭТИМ ФАЙЛОМ НЕ ЗАБЫТЬ ПОДКЛЮЧИТЬ ЕГО В INDEX
 
-
-
 // ---- ОБЬЕКТ
-
 
 // -----------------------------
 // CОЗДАНИЕ ОБЬЕКТА
@@ -13,87 +10,70 @@ let newObject = {};
 // и
 let newObject1 = Object();
 
-
-
 // -----------------------------
 // ДОБАВЛЕНИЕ СВОЙСТ В ОБЬЕКТ
 
 // добавление свойств в обьект можно делать так;
-newObject.login = 8906
+newObject.login = 8906;
 // потом раскомментировать
 // console.log(newObject)
 
-
-
 // cоздаем обьект
 const myCar = {
-	model:"Ауди",
-	fun:function() {
-		console.log(`Сейчас у меня машина - ${this.model}`)
-	}
-}
-
-
+  model: "Ауди",
+  fun: function () {
+    console.log(`Сейчас у меня машина - ${this.model}`);
+  },
+};
 
 // создаю новый экземпляр обьекта сar и записываю в него !все значения! свойств из обьекта-родителя
-let newMycar = Object.create(myCar)
+let newMycar = Object.create(myCar);
 
-newMycar.model = "Вольво"
-
-
-
+newMycar.model = "Вольво";
 
 // перебираю два массива с помощью цикла for in и получаю ключ и значение
 
 for (e in myCar) {
-	console.log(`${e} : ${myCar[e]}`)
+  console.log(`${e} : ${myCar[e]}`);
 }
 
 for (e in newMycar) {
-	console.log(`${e} : ${newMycar[e]}`)
+  console.log(`${e} : ${newMycar[e]}`);
 }
-
 
 let obj = {
-	name:"Vitaly",
-	subname:"Vronsky",
-	"Первое свойство": true,
-	greeting: function () {
-		console.log(`Добрый день`);
-	},
-}
-
+  name: "Vitaly",
+  subname: "Vronsky",
+  "Первое свойство": true,
+  greeting: function () {
+    console.log(`Добрый день`);
+  },
+};
 
 // coздал новый обьект и присвоил ему все свойства с первого обьекта obj
-const obj1 = Object.assign ({},obj)
-
-
+const obj1 = Object.assign({}, obj);
 
 // ------------------------
 // ПРЕИМУЩЕСТВА КВАДРАТНЫХ СКОБОК
 
-
-
 // cоздал переменную
-const name = "Аркадий"
+const name = "Аркадий";
 
 // cоздал обьект и присвоил ему значение в виде нашей переменной в верху, то есть при изменении нашей переменной значение в обьекте изменится
 
 let user3 = {
-	[name]: name,
-	age: 33
-}
+  [name]: name,
+  age: 33,
+};
 // потом раскомментировать
 // console.log(user3[name])
-
-
 
 //-----------------------------
 // Имена свойст в обьекте могут быть записаны и так. Но в любом случае это считается !как строка! и доступ к ним можно получить только через !квадратные скобки!
 
 let user4 = {
-	0: "Один",
-	1: "Два",
-}
+  0: "Один",
+  1: "Два",
+};
 // потом раскомментировать
-// console.log(user4["0"]) 
+// console.log(user4["0"])
