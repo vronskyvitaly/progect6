@@ -10,14 +10,28 @@
   <body>
 
 
-    <h1>
-      
-    </h1>
-
-    <h2>как дела?</h2>
-
+    <form id="mars-once" action="/apply/" method="POST">
+      <label>
+        Ваше имя:
+        <input type="text" name="name" id="name" placeholder="Введите ваше имя" required autofocus>
+      </label>
+    
+      <label>
+        Почта:
+        <input type="email" name="email" id="email" placeholder="elon@musk.com" required>
+      </label>
+    
+      <label>
+        Возраст:
+        <input type="number" name="age" required>
+      </label>
+    
+    
+      <button type="submit">Отправить заявку</button>
+    </form>
+    
 
     
-    <script src="/array.js"></script>
+    <script src="/form.js"></script>
   </body>
 </html>
