@@ -36,29 +36,27 @@ class User {
     this.name=name
     this.subname = subname
     this.mail = mail
-
   }
+    siHi() {
+    let res = `Привет меня зовут ${this.name}`
+    return res
+    }
 }
+
+
 
 // + задача создать новый обьект класса User
 let user1 = new User ("Ангелина", "Крукович","angel@mail.ru")
 
-// + задача вывести в консоль значения нашего обьекта
+console.log(user1)
+
+// Метод Object.getOwnPropertyNames() возвращает массив со всеми свойствами (независимо от того, перечисляемые они или нет), найденными непосредственно в переданном объекте.
+console.log((Object.getOwnPropertyNames(User.prototype)))
+
+// + задача вывести в консоль индекс и значения нашего обьекта
 Object.entries(user1).forEach(([key, value]) => {
   console.log(`Значение поля ${key} - ${value}`) 
 })
 
 
 
-let newUserName = document.querySelector('#name')
-let newUserSubname = document.querySelector('#subname')
-let newUserEmail = document.querySelector('#email')
-let btn = document.querySelector('#btn')
-
-console.log(newUserEmail)
-
-btn.addEventListener(`click`, function () {
- let user2 = new User (newUserName,newUserSubname,newUserEmail)
- console.log (user2.name)
-
-} )
