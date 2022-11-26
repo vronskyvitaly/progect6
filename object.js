@@ -211,10 +211,12 @@ user.name = "Vitaly"
 user.subname = "Vronsky"
 console.log (user)
 
-// добовляем еще одно свойство в наш обьект
+// добавляем еще одно свойство в наш обьект
 user.age = 33
 
 console.log(user)
+
+
 
 // + цель понять что такое мутирование копии обьекта 
 
@@ -260,6 +262,10 @@ async function getResponse () {
 }
 
   getResponse()
+
+
+  
+
 
 
 
