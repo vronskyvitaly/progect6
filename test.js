@@ -8,7 +8,7 @@ console.log(btnRes)
 console.log()
 
 btnMinys.addEventListener("click", function(){
-
+console.log("Нажал на минус")
 
 })
 
