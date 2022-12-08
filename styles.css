@@ -120,6 +120,33 @@ a{
     height: 99px;
     font-size: 30px;
     /* align-items: center; */
-    color:rgb(32, 32, 32);;
-    ;
+    color:rgb(32, 32, 32);
+}
+
+
+.cards-wrapper{
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+
+.card_img{
+    width: 300px;
+    height: 200px;
+    /* border: solid red 3px; */
+}
+
+.card-body{
+    padding-top: 10px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content:space-around
+
+}
+
+[data]{
+    font-size: 40px;
 }
