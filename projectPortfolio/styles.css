@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* cвойство для того чтобы при падингах блок не растягивался */
+    box-sizing: border-box;
+}
+
+.wrapper{
+    min-height: 100%;
+    /* чтобы не появлялся горизонтальный скрол на странице */
+    overflow: hidden; 
+}
+
+.container {
+    /* максимальная ширина на странице */
+    max-width: 1046px;
+    /* выравнивание элемента по середине экрана */
+    margin: 0px auto;
+    
+}
+
+
+.section-1{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(226, 234, 234);
+}
+
+.section-1_container{
+    border: solid 1;
+}

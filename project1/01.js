@@ -1,18 +1,22 @@
 const btnMinys = document.querySelector(`[data="minys"]`)
-console.log(btnMinys)
-const btnPlys = document.querySelector(`[data="plys"]`)
-console.log(btnPlys)
-const btnRes = document.querySelector(`[data="res"]`)
-console.log(btnRes)
 
-console.log()
+const btnPlys = document.querySelector(`[data="plys"]`)
+
+const btnRes = document.querySelector(`[data="res"]`)
+
+
+
 
 btnMinys.addEventListener("click", function(){
-console.log("Нажал на минус")
+
+if (btnRes.innerText > 1) {
+    console.log("Нажал на минус, и ресультат не может быть меньше 1")
+    btnRes.innerText = btnRes.innerText - 1
+}
 
 })
 
 btnPlys.addEventListener("click", function(){
 console.log("Нажал на плюс") 
-// res = btnResinnerHTML  
+++btnRes.innerText  
 })
