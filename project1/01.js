@@ -8,7 +8,6 @@ const btnRes = document.querySelector(`[data="res"]`)
 
 
 btnMinys.addEventListener("click", function(){
-
 if (btnRes.innerText > 1) {
     console.log("Нажал на минус, и ресультат не может быть меньше 1")
     btnRes.innerText = btnRes.innerText - 1

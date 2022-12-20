@@ -148,3 +148,78 @@ myFunction5(myObj1)
 console.log(myFunction5(myObj2))
 console.log(myFunction5(myObj2))
 
+
+// - [ ] Сверстать небольшой блок с тремя элементами и с помощью js по нажатию на один из элементов добавить к нему класс
+
+let itam = document.querySelectorAll(".box ")
+
+window.addEventListener("click", function (){
+    // + выводим в консоль то что пользователь нажал на странице
+    console.log ("Пользователь нажал на странице")
+    
+    // + добавляем по нажатию на один из элиментов добaвление класса
+    for(let i = 0; i < itam.length; i++){
+     itam[i].addEventListener("click",function(){
+        this.classList.add("main")
+     })
+    }
+
+    // - надо получить доступ к нажатому элементу на странице
+
+    })
+    
+
+
+
+    // + [выполненно] Что делать метод map с массивом, реализовать пример кода
+    // возвращает такой же массив, той же длины как и оригинальный массив
+
+    const may1 = [1,2,3,4,5,6]
+
+    const may1Res = may1.map((i)=>{
+        let s = 0 
+        return s = (i + i) * 6
+    })
+
+    console.log(may1Res)
+
+
+    // + [выполненно] Что вернет объявленная функция без ключевого слова return ?
+    // вернет undefined
+
+    function myReturn () {
+        console.log("Посмотреть что вернет эта функция, без ключевого слова return")
+    }
+
+    myReturn ()
+    
+
+    // + [выполненно] Объявить несколько переменных в одной строке, скопировать одно из значений переменной в другую переменную
+    
+
+    // 1 вариант
+    // let name, 
+    //         surname = "Vronsky", 
+    //         age = 13
+
+
+    // 2 вариант
+    let name, 
+            surname = "Vronsky" 
+            ,age = 13
+
+    console.log(age)
+    console.log(surname)
+
+    let myNewSurname = surname
+
+    console.log(myNewSurname)
+
+    // + [выполненно] Вопрос: имеет ли регистр значение в js? Попробовать объяснить на примере
+    // да имеет, например переменная n и переменная N
+
+    let n = 0
+    let N = 10
+
+    console.log(n)
+    console.log(N)
